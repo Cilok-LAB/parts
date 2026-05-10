@@ -110,6 +110,24 @@
     </PreferenceCategory>
 
     <PreferenceCategory
+        android:key="charging"
+        android:title="@string/charging_title">
+    
+        <Preference
+            android:key="charge_settings"
+            android:icon="@drawable/ic_bypass_charging"
+            android:title="@string/charge_bypass_title"
+            android:summary="@string/charge_bypass_summary"
+            settings:layout="@layout/arc_card_about_single">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="org.lineageos.settings.charge.ChargeActivity"
+                android:targetPackage="org.lineageos.settings" />
+        </Preference>
+    
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="vibration"
         android:title="@string/vibration_title">
 
